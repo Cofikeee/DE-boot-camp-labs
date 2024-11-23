@@ -9,7 +9,6 @@ CREATE TYPE season_stats AS (
 
 CREATE TYPE scoring_class AS ENUM ('star', 'good', 'average', 'bad');
 
-DROP TABLE players;
 CREATE TABLE IF NOT EXISTS players (
     player_name TEXT,
     height TEXT,
