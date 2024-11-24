@@ -51,10 +51,10 @@ ORDER BY player_name, streak_identifier;
 CREATE TYPE scd_type AS (
        scoring_class scoring_class,
        is_active BOOLEAN,
-       start_season INT,
-       end_sesason INT
+       start_season INTEGER,
+       end_sesason INTEGER
 );
-*/
+
 WITH
     last_season_scd AS (
         SELECT *
@@ -71,7 +71,7 @@ WITH
         FROM players_scd
         WHERE current_season = 2021
           AND end_season < 2021
-        ),
+    ),
     this_season_data AS (
         SELECT *
         FROM players
