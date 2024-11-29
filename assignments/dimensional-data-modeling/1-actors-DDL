@@ -1,4 +1,4 @@
--- TASK 1 - DDL for actors table with custom types films, quality_class
+-- DDL for actors table with custom types films, quality_class
 
 
 CREATE TYPE films AS (
